@@ -2,136 +2,130 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="./onepage-scroll.css">
-    <link href="https://fonts.googleapis.com/css?family=Cookie|Open+Sans:400,700" rel="stylesheet" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Raleway:400,300,700">
-
-    <style media="screen">
-      section {
-        display: -webkit-flex;
-        display: flex;
-        -webkit-align-items: center;
-        align-items: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        text-align: center;
-      }
-
-      section h1 {
-        /*display: block;*/
-        color: #e35885;
-      	font-size:64px;
-      	font-family:'Cookie', cursive;
-      	font-weight: normal;
-      	line-height:1;
-      	text-shadow:0 3px 0 rgba(0,0,0,0.1);
-        margin: 0 auto;
-        text-align: center;
-      }
-
-      nav {
-        margin: 100px auto;
-      }
-
-      nav a {
-      	position: relative;
-      	display: inline-block;
-      	margin: 15px 25px;
-      	outline: none;
-      	color: #e35885;
-      	text-decoration: none;
-      	text-transform: uppercase;
-      	letter-spacing: 1px;
-      	font-weight: 400;
-      	text-shadow: 0 0 1px rgba(255,255,255,0.3);
-      	font-size: 1.35em;
-        font-family: 'Raleway', sans-serif;
-      }
-
-      nav a:hover,
-      nav a:focus {
-      	outline: none;
-      }
-
-      /* Effect 1: Brackets */
-      .cl-effect-1 a::before,
-      .cl-effect-1 a::after {
-      	display: inline-block;
-      	opacity: 0;
-      	-webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
-      	-moz-transition: -moz-transform 0.3s, opacity 0.2s;
-      	transition: transform 0.3s, opacity 0.2s;
-      }
-
-      .cl-effect-1 a::before {
-      	margin-right: 10px;
-      	content: '[';
-      	-webkit-transform: translateX(20px);
-      	-moz-transform: translateX(20px);
-      	transform: translateX(20px);
-      }
-
-      .cl-effect-1 a::after {
-      	margin-left: 10px;
-      	content: ']';
-      	-webkit-transform: translateX(-20px);
-      	-moz-transform: translateX(-20px);
-      	transform: translateX(-20px);
-      }
-
-      .cl-effect-1 a:hover::before,
-      .cl-effect-1 a:hover::after,
-      .cl-effect-1 a:focus::before,
-      .cl-effect-1 a:focus::after {
-      	opacity: 1;
-      	-webkit-transform: translateX(0px);
-      	-moz-transform: translateX(0px);
-      	transform: translateX(0px);
-      }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>lindaxiao's looking for a job</title>
+  <link rel="stylesheet" href="./onepage-scroll.css">
+  <link href="https://fonts.googleapis.com/css?family=Cookie|Open+Sans:400,700" rel="stylesheet" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Raleway:400,300,700">
+  <link rel="stylesheet" href="./index.css">
 </head>
 
 <body>
-    <div class="main">
-        <section>
-          <div>
-            <h1 class="section-title">Lindaxiao / Just A Job Please</h1>
-            <nav class="cl-effect-1">
-    					<a href="#">TOUGH DAYS</a>
-    					<a href="#">THE STORY</a>
-    					<a href="#">ABOUT ME</a>
-    					<a href="#">CONTACT ME</a>
-    				</nav>
+  <div class="main">
+    <section class="section1">
+      <div>
+        <h1 class="section1-title">Lindaxiao / Just A Job Please</h1>
+        <nav class="cl-effect-1">
+          <a id="aboutMe" href="#2">ABOUT ME</a>
+          <a id="projects" href="#3">PROJECTS</a>
+          <a id="links" href="#4">LINKS</a>
+          <a id="contactMe" href="#5">CONTACT ME</a>
+        </nav>
+      </div>
+    </section>
+    <section>
+      <div>
+        <h1 class="section2-title">ABOUT ME</h1>
+        <div class="img-desc">
+          <img src="./hust.jpeg" alt="华中科技大学" width="100px" height="100px">
+          <div class="desc">
+            <p>华中科技大学 软件学院 软件工程 （2011.9 - 2015.6）</p>
+            <p>本科期间主要以学业为主，多次获得奖学金，保研</p>
           </div>
+        </div>
+        <div class="img-desc">
+          <img src="./zju.jpg" alt="浙江大学" width="100px" height="100px">
+          <div class="desc">
+            <p>浙江大学 计算机科学与技术学院 软件工程 （2015.9 - 至今）</p>
+            <p>研究生期间主要以项目实战为主，确定前端开发路线</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div>
+        <h1 class="section2-title">PROJECTS</h1>
+        <div class="img-desc">
+          <!-- <img src="./avatar2.png" alt="GitHub头像" width="100px" height="100px"> -->
+          <div class="desc">
+            <p>2017年3月1日开始，阿里、网易陆陆续续都开始春招了……</p>
+            <p>2017前端形势如何？杭州除了两大家还有哪些适合前端投的公司？</p>
+            <p>前端不适合申请华为和微软？有些公司笔试题不会将前端单独分离出来？</p>
+            <p>2017年3月8日，上届答辩结束，恭喜毕业</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div>
+        <h1 class="section2-title">LINKS</h1>
+        <nav class="cl-effect-13 img-desc">
+          <div class="link-div">
+            <img class="link-img" src="./avatar-github.png" alt="GitHub头像">
+            <a target="_blank" href="https://github.com/lindaxiao-hust">GitHub</a>
+          </div>
+          <div class="link-div">
+            <img class="link-img" src="./avatar-jianshu.jpeg" alt="简书头像">
+            <a target="_blank" href="http://www.jianshu.com/u/11989b537176">JIANSHU</a>
+          </div>
+          <div class="link-div">
+            <img class="link-img" src="./avatar-hexo.png" alt="hexo头像">
+            <a target="_blank" href="http://lindaxiao-hust.github.io/">HEXO</a>
+          </div>
+        </nav>
+      </div>
+    </section>
+    <section>
+      <div>
+        <h1 class="section2-title">CONTACT ME</h1>
+        <div class="img-desc">
+          <img src="./avatar-wx.jpeg" alt="GitHub头像" width="100px" height="100px">
+          <div class="desc">
+            <p>现在真的很需要一份2017暑期实习工作扩充自己的项目经验</p>
+            <p>有兴趣请联系 lindaxiao_hust@163.com，谢谢</p>
+            <p style="text-align: right;"><small>注：目前研二下，2018.3 毕业</small></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
 
-        </section>
-        <section></section>
-    </div>
+  <script type="text/javascript" src="./jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="./jquery.onepage-scroll.js"></script>
+  <script type="text/javascript">
+    $(".main").onepage_scroll({
+      sectionContainer: "section", // sectionContainer accepts any kind of selector in case you don't want to use section
+      easing: "ease", // Easing options accepts the CSS3 easing animation such "ease", "linear", "ease-in",
+      // "ease-out", "ease-in-out", or even cubic bezier value such as "cubic-bezier(0.175, 0.885, 0.420, 1.310)"
+      animationTime: 1000, // AnimationTime let you define how long each section takes to animate
+      pagination: true, // You can either show or hide the pagination. Toggle true for show, false for hide.
+      updateURL: false, // Toggle this true if you want the URL to be updated automatically when the user scroll to each page.
+      beforeMove: function(index) {}, // This option accepts a callback function. The function will be called before the page moves.
+      afterMove: function(index) {}, // This option accepts a callback function. The function will be called after the page moves.
+      loop: false, // You can have the page loop back to the top/bottom when the user navigates at up/down on the first/last page.
+      keyboard: true, // You can activate the keyboard controls
+      responsiveFallback: false, // You can fallback to normal page scroll by defining the width of the browser in which
+      // you want the responsive fallback to be triggered. For example, set this to 600 and whenever
+      // the browser's width is less than 600, the fallback will kick in.
+      direction: "vertical" // You can now define the direction of the One Page Scroll animation. Options available are "vertical" and "horizontal". The default value is "vertical".
+    });
 
-    <script type="text/javascript" src="./jquery-3.1.1.min.js"></script>
-    <script type="text/javascript" src="./jquery.onepage-scroll.js"></script>
-    <script type="text/javascript">
-        $(".main").onepage_scroll({
-            sectionContainer: "section", // sectionContainer accepts any kind of selector in case you don't want to use section
-            easing: "ease", // Easing options accepts the CSS3 easing animation such "ease", "linear", "ease-in",
-            // "ease-out", "ease-in-out", or even cubic bezier value such as "cubic-bezier(0.175, 0.885, 0.420, 1.310)"
-            animationTime: 1000, // AnimationTime let you define how long each section takes to animate
-            pagination: true, // You can either show or hide the pagination. Toggle true for show, false for hide.
-            updateURL: false, // Toggle this true if you want the URL to be updated automatically when the user scroll to each page.
-            beforeMove: function(index) {}, // This option accepts a callback function. The function will be called before the page moves.
-            afterMove: function(index) {}, // This option accepts a callback function. The function will be called after the page moves.
-            loop: false, // You can have the page loop back to the top/bottom when the user navigates at up/down on the first/last page.
-            keyboard: true, // You can activate the keyboard controls
-            responsiveFallback: false, // You can fallback to normal page scroll by defining the width of the browser in which
-            // you want the responsive fallback to be triggered. For example, set this to 600 and whenever
-            // the browser's width is less than 600, the fallback will kick in.
-            direction: "vertical" // You can now define the direction of the One Page Scroll animation. Options available are "vertical" and "horizontal". The default value is "vertical".
-        });
-    </script>
+    $("#aboutMe").click(function() {
+      $(".main").moveTo(2);
+    })
+    $("#projects").click(function() {
+      $(".main").moveTo(3);
+    })
+    $("#links").click(function() {
+      $(".main").moveTo(4);
+    })
+    $("#contactMe").click(function() {
+      $(".main").moveTo(5);
+    })
+
+  </script>
 </body>
 
 </html>
